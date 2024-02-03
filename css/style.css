@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--tertiary-color);
+}
+
+/*******************************BARRE DE NAVIGATION*************************/
+
+header {
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    margin: auto;
+    background-color: var(--secondary-color);
+    position: fixed;
+}
+
+header:hover {
+    border-bottom: 4px solid green;
+}
+
+header nav {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a {
+    font-size: 1.5rem;
+    color: black;
+}
+
+#lune {
+    width: 5%;
+    height: 5%;
+    cursor: pointer;
+}
+
+:root {
+    --primary-color : black;
+    --secondary-color : #e7e7e6;
+    --tertiary-color : white;
+
+    
+}
+
+.dark-theme {
+        --primary-color: white;
+        --secondary-color: #494A4C;
+        --tertiary-color: #27282B;
+    }
+
+/************************************HR**************************************/
+
+hr {
+    width: 15%;
+    height: 4px;
+    background-color: green;
+    margin: 0 auto 50px;
+}
+
+/*******************************PREMIER BLOCK *************************/
+.head {
+    height: 95vh;
+    color: var(--primary-color);
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/header.jpg);
+}
+
+.head div {
+    height: 95vh;
+    padding-top: 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head img {
+    width: 45%;
+}
+
+.head h1 {
+    font-size: 5rem;
+    font-family: 'Anton', sans-serif;
+    color: white;
+}
+
+.head p {
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.head input {
+    background-color: transparent;
+    font-size: 1.8rem;
+    color: white;
+    border-color: white;
+    padding: 5px;
+    padding-block: 10px;
+    padding-inline: 60px;
+}
+
+
+/*******************************TOPS DESTINATIONS*************************/
+h2 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.tops-destinations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.galerie article {
+    box-shadow: 0px 2px 2px 1px #c0bebe;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.galerie img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.galerie h3,
+.galerie p {
+    text-align: center;
+    padding: 10px;
+    color: var(--primary-color);
+}
+
+.galerie input {
+    background-color: rgb(25, 87, 48);
+    color: var(--tertiary-color);
+    font-size: 1.2rem;
+    border-radius: 30px;
+    padding-block: 20px;
+    padding-inline: 60px;
+    border-style: none;
+    display: block;
+    position: relative;
+    margin: -40px auto 0;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+#lightbox-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-btn {
+    color: #fff;
+    font-size: 3rem;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/*******************************DERNIERS AVIS*************************/
+
+.derniers-avis {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%;
+}
+
+.guys {
+    flex: 0 0 33.33%;
+    box-shadow: 0px 2px 2px 1px #c0bebe;
+    padding: 20px;
+    text-align: center;
+}
+
+.guys img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.guys h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.guys p {
+    font-size: 1rem;
+    width: 50%;
+    margin: auto;
+    color: var(--primary-color);
+}
+
+.carousel-navigation {
+    margin: auto;
+}
+
+.carousel-navigation button {
+    background-color: rgb(25, 87, 48);
+    color: var(--tertiary-color);
+    font-size: 1rem;
+    border-radius: 30px;
+    padding-block: 10px;
+    padding-inline: 30px;
+    margin: 20px;
+    border-style: none;
+}
+
+/*******************************CONTACT*************************/
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--tertiary-color);
+}
+
+.contact p {
+    width: 90%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.formulaire input {
+    margin-bottom: 20px;
+    height: 50px;
+    padding-left: 15px;
+    font-size: 1.2rem;
+    background-color: var(--tertiary-color);
+}
+
+.formulaire textarea {
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    background-color: var(--tertiary-color);
+}
+
+.bouton-formulaire {
+    background-color: rgb(25, 87, 48);
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    border-style: none;
+    width: 20%;
+}
+
+/*******************************FOOTER*************************/
+
+footer {
+    margin: 50px;
+}
+
+
+/***********************************PAGE NORVEGE**************************************************/
+
+/**********HEADER*************/
+.head-norvege {
+    background-image: url(../img/destination1.jpg);
+    height: 75vh;
+    color: var(--primary-color);
+    background-size: cover;
+    background-position: center;
+}
+
+.head-norvege div {
+    height: 95vh;
+    padding-top: 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-norvege h1 {
+    font-size: 5rem;
+    font-family: 'Anton', sans-serif;
+}
+
+.head-norvege p {
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+}
+
+.head-norvege input {
+    background-color: transparent;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    border-color: var(--primary-color);
+    padding: 5px;
+    padding-block: 10px;
+    padding-inline: 60px;
+}
+
+/**********DETAILS SEJOUR*************/
+#details {
+    padding: 100px;
+    text-align: center;
+}
+
+#details p {
+    margin-bottom: 50px;
+    color: var(--primary-color);
+}
+
+.details-article {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 0px 2px 1px #8F8F8F;
+    padding: 50px;
+}
+
+#details h5 {
+    font-size: 2rem;
+}

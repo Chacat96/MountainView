@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountaineview</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">ACCUEIL</a>
+            <a href="#destinations">DESTINATIONS</a>
+            <a href="#derniers-avis">AVIS</a>
+            <a href="#contact">CONTACTEZ-NOUS</a>
+            <img id="lune" src="img/icons8-lune-50.png" alt="lune">
+        </nav>
+    </header>
+
+    <section class="head rellax" data-rellax-speed="-17">
+        <div>
+            <img src="img/logo.png" alt="logo">
+            <h1>MOUNTAIN VIEW</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <input type="button" value="CONTINUER">
+        </div>
+    </section>
+
+    <section id="destinations">
+
+        <h2>TOPS DESTINATIONS</h2>
+        <hr>
+
+        <div class="galerie">
+            <article>
+                <img src="img/destination1.jpg" alt="destination1" onclick="openImage('img/destination1.jpg')">
+                <input type="button" value="Réserver">
+                <h3>NORVEGE</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt officiis voluptas, dolore ab dolorum
+                    commodi reprehenderit dolorem debitis deserunt iure magni tenetur enim tempora fugit vel ducimus
+                    asperiores quasi odit.
+                    Cum similique, enim, ab nisi, sequi tempora facilis omnis illum praesentium tenetur quam
+                    voluptas!</p>
+            </article>
+
+            <article>
+                <img src="img/destination2.jpg" alt="destination2" onclick="openImage('img/destination2.jpg')">
+                <input type="button" value="Réserver">
+                <h3>NEW-ZELLANDE</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt officiis voluptas, dolore ab dolorum
+                    commodi reprehenderit dolorem debitis deserunt iure magni tenetur enim tempora fugit vel ducimus
+                    asperiores quasi odit.
+                    Cum similique, enim, ab nisi, sequi tempora facilis omnis illum praesentium tenetur quam inventore
+                    voluptas!</p>
+            </article>
+
+            <article>
+                <img src="img/destination3.jpg" alt="destination3" onclick="openImage('img/destination3.jpg')">
+                <input type="button" value="Réserver">
+                <h3>CANADA</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt officiis voluptas, dolore ab dolorum
+                    commodi reprehenderit dolorem debitis deserunt iure magni tenetur enim tempora fugit vel ducimus
+                    asperiores quasi odit.
+                    Cum similique, enim, ab nisi, sequi tempora facilis omnis illum praesentium tenetur quam inventore
+                    voluptas!</p>
+            </article>
+        </div>
+
+        <div id="lightbox" class="lightbox" onclick="closeImage()">
+            <span class="close-btn" onclick="closeImage()">&times;</span>
+            <img src="" alt="lightbox-image" id="lightbox-image">
+        </div>
+    </section>
+
+
+    <section class="derniers-avis" id="derniers-avis">
+
+        <h2>DERNIERS AVIS</h2>
+        <hr>
+        <div class="contenu-avis">
+            <div class="carousel">
+                <div class="guys">
+                    <img src="img/avis1.jpg" alt="avis1">
+                    <h4>Johan Doe</h4>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, harum laboriosam sint rerum id
+                        quidem
+                        blanditiis expedita unde molestias. Qui veniam ad quasi autem praesentium reiciendis in odit
+                        sunt
+                        cumque. blanditiis expedita unde molestias. Qui veniam ad quasi autem praesentium reiciendis in
+                        odit sunt
+                        cumque.</p>
+                </div>
+
+                <div class="guys">
+                    <img src="img/avis2.jpg" alt="avis2">
+                    <h4>Jane Smith</h4>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, harum laboriosam sint rerum id
+                        quidem
+                        blanditiis expedita unde molestias. Qui veniam ad quasi autem praesentium reiciendis in odit
+                        sunt
+                        cumque. blanditiis expedita unde molestias. Qui veniam ad quasi autem praesentium reiciendis in
+                        odit sunt
+                        cumque.</p>
+                </div>
+
+                <div class="guys">
+                    <img src="img/avis3.jpg" alt="avis3">
+                    <h4>John Smith</h4>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, harum laboriosam sint rerum id
+                        quidem
+                        blanditiis expedita unde molestias. Qui veniam ad quasi autem praesentium reiciendis in odit
+                        sunt
+                        cumque. blanditiis expedita unde molestias. Qui veniam ad quasi autem praesentium reiciendis in
+                        odit sunt
+                        cumque.</p>
+                </div>
+
+                <div class="guys">
+                    <img src="img/avis3.jpg" alt="avis3">
+                    <h4>John Smith</h4>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, harum laboriosam sint rerum id
+                        quidem
+                        blanditiis expedita unde molestias. Qui veniam ad quasi autem praesentium reiciendis in odit
+                        sunt
+                        cumque. blanditiis expedita unde molestias. Qui veniam ad quasi autem praesentium reiciendis in
+                        odit sunt
+                        cumque.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-navigation">
+            <button onclick="avisPrecedent()">Précédent</button>
+            <button onclick="avisSuivant()">Suivant</button>
+        </div>
+
+    </section>
+
+
+
+    <section class="contact" id="contact">
+
+        <h2>CONTACTEZ-NOUS</h2>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos minus placeat aliquam, porro corrupti quae,
+            repellendus suscipit eum illo ullam corporis laborum commodi tempora vel hic fugiat</p>
+
+        <form action="" method="post" class="formulaire" id="contactForm">
+            <input type="text" id="nom" placeholder="Nom" required>
+            <input type="text" id="prenom" placeholder="Prénom" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <textarea id="commentaires" cols="30" rows="10" placeholder="Commentaires" required></textarea>
+            <input type="button" value="Envoyer" class="bouton-formulaire" onclick="submitForm()">
+        </form>
+        <div id="confirmationMessage"></div>
+
+
+    </section>
+
+    <footer>
+        <p>copyright &copy;</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+</body>
+
+</html>
